@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3.75rem;
+  background: #f7f7f7;
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+  margin: 0.2344rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.header{
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.introdução h1{
+  font-size: 2rem;
+}
+
+.header img{
+  margin-top: 3.75rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.menu a {
+  display: block;
+  background: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.9375rem 1.875rem;
+  color: #000;
+  text-transform: uppercase;
+  border: 0.125rem solid rgb(253, 253, 253);
+}
+
+.menu a:hover {
+  border: 0.125rem solid #e21;
+}
+
+.conteúdo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+}
+
+.introdução {
+  background: #ffffff;
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: end;
+}
+
+.introdução::before{
+  content: "";
+  width:3.75rem;
+  height: 0.1875rem;
+  background: #e21;
+  display: inline-block;
+  position: absolute;
+  top: 1.5625rem;
+  right: -1.875rem;
+}
+
+.cover img{
+ object-fit: cover;
+ height: 100%;
+}
+
+.botão {
+  background: #e21;
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.botão:hover{
+  background: #900; 
+}
+
+.subtítulo {
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  align-self: center;
+  justify-self: end;
+  background-image: url("./img/onda.svg");
+}
+
+.vantagens-item {
+  background: #fff;
+  padding: 1.25rem;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1px 1.25rem;
+  border-left: 0.250rem solid transparent;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.vantagens-item:hover{
+  border-left: 0.250rem solid #e21;
+}
+
+.vantagens-item:nth-child(odd){
+  background: #f7f7f7;
+}
+
+.rodapé {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px){
+  .conteúdo{
+    grid-template-columns: 1fr;
+  }
+  .subtítulo{
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px){
+  .subtítulo{
+    font-size: 2rem;
+  }
+}
